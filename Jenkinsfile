@@ -20,12 +20,16 @@ pipeline {
             sh 'mvn clean package' // Adjust your build command
         }
     }
-    stage('Checkout Source') {
-      steps {
-        git 'https://github.com/ZebbaraAbdessamad/deploy-spring-boot-on-k8s-using-jenkins.git'
-      }
-    }
 
+    stage('Initialize') {
+        steps{
+            script {
+                def dockerHome = tool 'Docker'
+                env.PATH = "${dockerHome}/bin:${env.PATH}"
+            }
+        }
+    }
+    
     stage('Build image') {
       steps{
         script {
