@@ -9,12 +9,6 @@ pipeline {
 
   stages {
 
-    stage('Checkout Source') {
-      steps {
-        git 'https://github.com/ZebbaraAbdessamad/deploy-spring-boot-on-k8s-using-jenkins.git'
-      }
-    }
-
     stage('Build image') {
       steps{
         script {
