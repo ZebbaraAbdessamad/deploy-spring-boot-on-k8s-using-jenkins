@@ -1,5 +1,10 @@
 pipeline {
 
+  tools {
+        // Specify the name of the Maven installation defined in Jenkins
+        maven 'Maven 3.6.3'
+   }
+
   environment {
     dockerimagename = "abdessamadzebbara/spring-boot-k8s"
     dockerImage = ""
@@ -9,6 +14,12 @@ pipeline {
 
   stages {
 
+    stage('Build App') {
+        steps {
+            // Build your Spring Boot application
+            sh 'mvn clean package' // Adjust your build command
+        }
+    }
     stage('Checkout Source') {
       steps {
         git 'https://github.com/ZebbaraAbdessamad/deploy-spring-boot-on-k8s-using-jenkins.git'

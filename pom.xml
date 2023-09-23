@@ -55,7 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-boot-app</finalName>
+		<finalName>spring-boot-k8s</finalName>
 	</build>
 
 </project>
