@@ -8,8 +8,9 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello K8s," +
-                "💻💻💻💻💻" +
-                " 🚨🚨";
+        return "Hello K8s,\n" +
+                "💻💻💻💻💻\n" +
+                "🐥🐥🐥🐥🐥🐥🐥\n" +
+                " \n🚨🚨";
     }
 }

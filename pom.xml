@@ -52,10 +52,11 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<finalName>spring-boot-k8s</finalName>
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-boot-k8s</finalName>
+
 	</build>
 
 </project>
