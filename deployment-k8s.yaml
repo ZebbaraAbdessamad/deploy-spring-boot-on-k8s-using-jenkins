@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s-container
-          image: spring-boot-k8s:latest # Replace with your Docker image name and tag
+          image: abdessamadzebbara / spring-boot-k8s # Replace with your Docker image name and tag
           ports:
             - containerPort: 8080
 
