@@ -48,8 +48,8 @@ pipeline {
           
           kubernetesDeploy(
             cloud: 'kubernetes',
-            configs: "deployment-k8s.yaml", 
-            kubeconfigId: "mykubeconfig")
+            configs: 'deployment-k8s.yaml', 
+            kubeconfigId: 'mykubeconfig')
         }
       }
     }
