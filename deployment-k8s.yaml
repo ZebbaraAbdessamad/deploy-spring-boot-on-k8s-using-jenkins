@@ -17,7 +17,7 @@ spec:
         - name: spring-boot-k8s-container
           image: abdessamadzebbara/spring-boot-k8s:latest # Replace with your Docker image name and tag
           ports:
-            - containerPort: 8080
+            - containerPort: 8089
 
 ---
 
@@ -32,5 +32,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 8089
   type: NodePort # Exposes the service on a random port on each Minikube node
