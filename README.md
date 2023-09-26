@@ -1,4 +1,6 @@
-# Spring Boot Application Automated Deployment with Jenkins in Kubernetes Cluster
+# Spring Boot Application Automated Deployment with Jenkins in Kubernetes Cluster 
+
+<br/>
 
 ![Architecture](images/k8s-deployement.png)
 
@@ -39,7 +41,7 @@ Before you begin, ensure you have the following tools and services set up:
 
 2. Change to the project directory:
 
-  ```bash
+   ```bash
    cd your-spring-boot-app
    ````
 
