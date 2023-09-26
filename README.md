@@ -36,7 +36,7 @@ Before you begin, ensure you have the following tools and services set up:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/your-spring-boot-app.git
+   git clone https://github.com/ZebbaraAbdessamad/deploy-spring-boot-on-k8s-using-jenkins.git
     ```
 
 2. Change to the project directory:
@@ -74,8 +74,7 @@ To automate the deployment process, you'll need a custom Jenkins image that incl
 
 Build this Docker image and use it for your Jenkins server with both Docker and kubectl installed.
 
-Run your Jenkins server ( don't forget to make jenkins and minikube cluster in the same network )
-
+Run your Jenkins server (don't forget to make Jenkins and Minikube cluster in the same network)
 
   ```bash
    docker run -d -p 8080:8080 -p 50000:50000 
