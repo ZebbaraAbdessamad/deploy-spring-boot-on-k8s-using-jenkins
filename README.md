@@ -49,7 +49,13 @@ Before you begin, ensure you have the following tools and services set up:
 ### Jenkins Custom Image
 
 ---
-To automate the deployment process, you'll need a custom Jenkins image that includes Docker CLI and kubectl. You can create this image using the following Dockerfile:
+To automate the deployment process, you'll need a custom Jenkins image that includes Docker CLI and kubectl.
+
+Here is a demonstration of how the Docker daemon works
+
+![Architecture](images/docker-architecture.png)
+
+You can create this image using the following Dockerfile:
   ```bash
       # Use the official Jenkins LTS base image
       FROM jenkins/jenkins:lts
