@@ -1,4 +1,4 @@
-# Spring Boot Application Automated Deployment with Jenkins in Kubernetes Cluster 
+# Automated CI/CD for Containerized Spring Boot Applications in Kubernetes Cluster 
 
 <br/>
 
